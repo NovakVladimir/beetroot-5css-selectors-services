@@ -1,0 +1,60 @@
+body {
+    background: repeating-linear-gradient(90deg,#dbbdb9, #dbbdb9 6vw, transparent 6vw, transparent 7.5vw);
+    position: relative;
+}
+
+p {
+    font-size: 18px;
+}
+
+p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    text-align: center; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 10% auto 10% auto; 
+}
+
+section {
+    width: 33%;
+    vertical-align: middle;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+div.round {
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #2a69a6;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    position: relative;
+    background-color: #2a69a6;
+}
+
+div img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    filter: brightness(0) invert(1);
+}
+
+div.round:hover {
+    background-color: white;
+}
+
+div.round:hover img {
+    filter: invert(38%) sepia(9%) saturate(5197%) hue-rotate(173deg) brightness(89%) contrast(84%);
+}
+
